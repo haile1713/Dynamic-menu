@@ -1,0 +1,52 @@
+.navbar {
+	text-align: center;
+	padding: 50px;
+	background-color: #fff;
+}
+
+.navbar h1 {
+	margin-bottom: 50px;
+	font-size: 2.8rem;
+	color: #333;
+}
+
+.navbar-buttons button {
+	margin: 20px;
+	padding: 10px 20px;
+	font-size: 1.7rem;
+	cursor: pointer;
+	border: transparent;
+	background-color: transparent;
+	border-radius: 10px;
+	transition: background-color 0.3s;
+	color: #f77f00;
+}
+
+.navbar-buttons button:hover {
+	background-color: #f77f00;
+	color: white;
+}
+
+.navbar-title {
+	font-size: 2.5rem;
+	color: #f77f00;
+	text-align: center;
+	font-weight: bold;
+	display: inline-block; /* Makes underline fit the width of the text */
+	margin-bottom: 20px;
+	position: relative; /* Needed for the pseudo-element positioning */
+}
+
+.navbar-title::after {
+	content: "";
+	display: block;
+	width: 50%; /* Underline width (adjustable) */
+	height: 6px; /* Underline thickness */
+	background-color: #f77f00; /* Underline color (e.g., gold/brown) */
+	margin: 0 auto; /* Centers the underline */
+	position: absolute;
+	border-radius: 12px;
+	bottom: -15px; /* Adjusts the distance between text and underline */
+	left: 0;
+	right: 0;
+}
