@@ -65,7 +65,7 @@ project/
 
 1. Clone the repository:
    ```bash
-   git clone [<repository-url>](https://github.com/haile1713/Dynamic-menu.git)
+   git clone https://github.com/haile1713/Dynamic-menu.git
    ```
 
 2. Navigate to the project directory:
