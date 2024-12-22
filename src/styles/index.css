@@ -50,3 +50,58 @@
 	left: 0;
 	right: 0;
 }
+.menu-list {
+  display: flex; /* Enables side-by-side layout */
+  flex-wrap: wrap; /* Ensures responsiveness for smaller screens */
+  justify-content: center; /* Centers the items */
+  gap: 20px; /* Adds space between items */
+  padding: 20px;
+}
+
+.menu-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 400px; /* Fixed width for each item */
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item-image {
+  width: 100%; /* Makes the image fill the card */
+  height: 300px;
+  object-fit: cover; /* Ensures the image is properly cropped */
+}
+
+.menu-item-details {
+  padding: 15px;
+  color: #ff6600;
+}
+
+.section-heading {
+  font-size: 2rem;
+  color: #ff6600; /* Bright orange */
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  position: relative; /* Enables pseudo-element styling */
+}
+
+.section-heading::after {
+  content: "";
+  display: block;
+  width: 5%; /* Adjust underline width */
+  height: 4px; /* Adjust underline thickness */
+  background-color: #ff6600; /* Match the heading color */
+  margin: 0 auto; /* Center the underline */
+  margin-top: 5px; /* Space between heading and underline */
+}
+
