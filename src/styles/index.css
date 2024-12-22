@@ -1,7 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif; /* Clean and modern font */
+  background: linear-gradient(200deg, #ffffff, #FAA307); /* Gradient from white to orange */
+  color: #333; /* Dark gray for readable text */
+  line-height: 2; /* Improves readability */
+}
 .navbar {
 	text-align: center;
-	padding: 50px;
-	background-color: #fff;
+	padding: 20px;
+	/* background-color: #fff; */
 }
 
 .navbar h1 {
@@ -54,7 +62,7 @@
   display: flex; /* Enables side-by-side layout */
   flex-wrap: wrap; /* Ensures responsiveness for smaller screens */
   justify-content: center; /* Centers the items */
-  gap: 20px; /* Adds space between items */
+  gap: 90px; /* Adds space between items */
   padding: 20px;
 }
 
