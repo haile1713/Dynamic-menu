@@ -1,15 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap"); /*import custom font */
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "Arial", sans-serif; /* Clean and modern font */
-  background: linear-gradient(200deg, #ffffff, #FAA307); /* Gradient from white to orange */
-  color: #333; /* Dark gray for readable text */
-  line-height: 2; /* Improves readability */
+	margin: 0;
+	padding: 0;
+	font-family: "Arial", sans-serif;
+	background: linear-gradient(
+		200deg,
+		#ffffff,
+		#faa307
+	); /* Gradient from white to orange */
+	color: #333;
+	line-height: 2;
 }
 .navbar {
 	text-align: center;
-	padding: 20px;
-	/* background-color: #fff; */
+	padding: 10px;
+	background-color: #fff;
 }
 
 .navbar h1 {
@@ -40,76 +46,107 @@ body {
 	color: #f77f00;
 	text-align: center;
 	font-weight: bold;
-	display: inline-block; /* Makes underline fit the width of the text */
+	display: inline-block;
 	margin-bottom: 20px;
-	position: relative; /* Needed for the pseudo-element positioning */
+	position: relative;
 }
 
 .navbar-title::after {
 	content: "";
 	display: block;
-	width: 50%; /* Underline width (adjustable) */
-	height: 6px; /* Underline thickness */
-	background-color: #f77f00; /* Underline color (e.g., gold/brown) */
-	margin: 0 auto; /* Centers the underline */
+	width: 60%;
+	height: 10px;
+	background-color: #f77f00;
+	margin: 0 auto;
 	position: absolute;
 	border-radius: 12px;
-	bottom: -15px; /* Adjusts the distance between text and underline */
+	bottom: -5px;
 	left: 0;
 	right: 0;
 }
 .menu-list {
-  display: flex; /* Enables side-by-side layout */
-  flex-wrap: wrap; /* Ensures responsiveness for smaller screens */
-  justify-content: center; /* Centers the items */
-  gap: 90px; /* Adds space between items */
-  padding: 20px;
+	display: flex; /*side-by-side layout */
+	flex-wrap: wrap; /*responsiveness for smaller screens */
+	justify-content: center;
+	gap: 90px;
+	padding: 20px;
 }
 
 .menu-item {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  width: 400px; /* Fixed width for each item */
-  text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	width: 400px;
+	text-align: center;
+	transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .menu-item:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+	transform: scale(1.05);
+	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+.menu-item-image-wrapper {
+	position: relative;
+}
+.menu-item-image {
+	width: 100%; /* image fill the card */
+	height: 300px;
+	object-fit: cover;
+}
+.menu-item-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: opacity 0.3s ease;
 }
 
-.menu-item-image {
-  width: 100%; /* Makes the image fill the card */
-  height: 300px;
-  object-fit: cover; /* Ensures the image is properly cropped */
+.menu-item:hover .menu-item-overlay {
+	opacity: 1;
+}
+.menu-item-description {
+	font-size: 1.5rem;
+	padding: 10px;
+	text-align: center;
+	font-family: "Pacifico", cursive;
+	font-weight: 400;
+	color: #fff;
 }
 
 .menu-item-details {
-  padding: 15px;
-  color: #ff6600;
+	padding: 15px;
+	color: #ff6600;
 }
-
+.menu-item-details h3 {
+	font-size: 1.2rem;
+	color: #333;
+	margin: 10px 0 5px;
+}
 .section-heading {
-  font-size: 2rem;
-  color: #ff6600; /* Bright orange */
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 15px;
-  font-weight: bold;
-  position: relative; /* Enables pseudo-element styling */
+	font-size: 2.5rem;
+	color: #333;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	font-weight: bold;
+	position: relative;
 }
 
 .section-heading::after {
-  content: "";
-  display: block;
-  width: 5%; /* Adjust underline width */
-  height: 4px; /* Adjust underline thickness */
-  background-color: #ff6600; /* Match the heading color */
-  margin: 0 auto; /* Center the underline */
-  margin-top: 5px; /* Space between heading and underline */
+	content: "";
+	display: block;
+	width: 4%;
+	height: 4px;
+	background-color: #ff6600;
+	margin: 0 auto;
+	margin-top: 5px;
 }
-
