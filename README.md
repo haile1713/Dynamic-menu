@@ -65,7 +65,7 @@ project/
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone [<repository-url>](https://github.com/haile1713/Dynamic-menu.git)
    ```
 
 2. Navigate to the project directory:
@@ -135,8 +135,7 @@ This project is licensed under the MIT License. See the LICENSE file for details
 - [React Documentation](https://reactjs.org/)
 - [Bun Documentation](https://bun.sh/)
 - [Google Fonts](https://fonts.google.com/)
-- [pintersth](https://pinterst.com/) for placeholder images
-
+- [pinterest](https://pinterest.com/) for placeholder images
 ---
 
 Enjoy building and customizing your Dynamic Menu Application! 🚀
